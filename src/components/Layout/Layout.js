@@ -20,9 +20,10 @@ export default function Layout() {
         <CDBSidebarContent>
           <CDBSidebarMenu>
             <CDBSidebarMenuItem  icon="th-large"
+            onClick={()=>navigate("/")}
             >Wallet</CDBSidebarMenuItem>
             <CDBSidebarMenuItem  icon="th-large"
-            onClick={()=>navigate("/about")}
+            onClick={()=>navigate("/history")}
             >history</CDBSidebarMenuItem>
             <CDBSidebarMenuItem onClick={()=>{
               dispatch(Login(null))
